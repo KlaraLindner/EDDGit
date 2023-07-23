@@ -35,12 +35,14 @@ public class CameraMovement : MonoBehaviour
         // Rotation axis is x up and down, y is left and right, so screenspace iverted!
         //-1 on y because when moving up, the camera moves down  
 
-        mainCam.transform.eulerAngles += new Vector3(normalizedMousePosX, normalizedMousePosY, 0f) * accreleration;
+       // mainCam.transform.eulerAngles += new Vector3(normalizedMousePosX, normalizedMousePosY, 0f) * accreleration;
         //Correct implementation;
         // mainCam.transform.rotation *= Quaternion.Euler((1 - (Input.mousePosition.y / screenspaceY)) - 0.5f, (Input.mousePosition.x / screenspaceX) - 0.5f, 0f);
         //I don't know whats happening here, engine magic in the 4th dimension I guess
         //mainCam.transform.rotation *= new Quaternion(normalizedMousePosX, normalizedMousePosY, 0f, 100 - (accreleration * 30));
         //Short hand:
-        // mainCam.transform.Rotate(new Vector3(normalizedMousePosX, normalizedMousePosY, 0f) * accreleration);
-    }
+         mainCam.transform.Rotate(new Vector3(normalizedMousePosX, normalizedMousePosY, 0f) * accreleration);
+        //Constant Rotatition alters the z-axis, this needs to be reseted every frame
+        mainCam.transform.eulerAngles = new Vector3(mainCam.transform.eulerAngles.x, mainCam.transform.eulerAngles.y, 0f);
+     }
 }
