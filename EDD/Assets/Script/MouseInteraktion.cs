@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MouseInteraktion : MonoBehaviour
 {
-
+    [SerializeField] LayerMask layer;
     void Start()
     {
         
@@ -13,12 +13,21 @@ public class MouseInteraktion : MonoBehaviour
     void Update()
     {   //If the left mousebutton is pressed, 
         //SHoot a raycast and check, if an Object was hit
+       
         if (Input.GetMouseButtonDown(0))
         {
-            if(Physics.Raycast(transform.position, transform.forward, out RaycastHit hitInfo, 100f, 3))
+            Debug.Log("MouseHIt");
+            Ray mousePosition = Camera.main.ScreenPointToRay(Input.mousePosition); 
+            if(Physics.Raycast(mousePosition, out RaycastHit hitInfo, 100f))
             {
                 Debug.Log("Hit " + hitInfo.transform.name);
             }
         }
+    }
+    private void OnDrawGizmos()
+    {
+        Ray mousePosition = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Gizmos.color = Color.red;
+        Gizmos.DrawRay(mousePosition.origin, mousePosition.direction*10f);
     }
 }

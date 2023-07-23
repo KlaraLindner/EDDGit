@@ -57,8 +57,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\CameraMovement.cs" />
-    <Compile Include="Assets\Script\EnvironmentInteractable.cs" />
     <Compile Include="Assets\Script\MouseInteraktion.cs" />
+    <Compile Include="Assets\Script\EnvironmentInteractable.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Script\TreeBig.shader" />
