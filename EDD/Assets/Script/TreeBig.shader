@@ -11,7 +11,7 @@ Shader "InsideVisible"
 
     SubShader 
     {
-        Tags {"Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Transparent"}
+        Tags {"Queue"="Transparent" "RenderType"="Transparent"}
         ZWrite Off
         Blend SrcAlpha OneMinusSrcAlpha
         Cull Off
@@ -55,8 +55,8 @@ Shader "InsideVisible"
             }
 
             fixed4 frag (v2f i) : SV_Target
-            {    fixed4 alphaColor = tex2D(_AlphaTextur, i.texcoord);
-                fixed4 col = tex2D(_MainTex, i.texcoord) * _Color; // multiply by _Color
+            {   fixed4 alphaColor = tex2D(_AlphaTextur, i.texcoord);
+                fixed4 col = tex2D(_MainTex, i.texcoord) * _Color; 
                 col.a=alphaColor;
                 return col;
             }

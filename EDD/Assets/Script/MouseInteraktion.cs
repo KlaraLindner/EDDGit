@@ -24,10 +24,4 @@ public class MouseInteraktion : MonoBehaviour
             }
         }
     }
-    private void OnDrawGizmos()
-    {
-        Ray mousePosition = Camera.main.ScreenPointToRay(Input.mousePosition);
-        Gizmos.color = Color.red;
-        Gizmos.DrawRay(mousePosition.origin, mousePosition.direction*10f);
-    }
 }

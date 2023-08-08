@@ -51,8 +51,8 @@ public class CameraMovement : MonoBehaviour
         normalizedMousePosX = (1 - (Input.mousePosition.y / screenspaceY)) - 0.5f;
         normalizedMousePosY = (Input.mousePosition.x / screenspaceX) - 0.5f;
         // Smoothly tilts a transform towards a target rotation.
-        float tiltAroundZ = accreleration * normalizedMousePosX;
-        float tiltAroundX = accreleration * normalizedMousePosY;
+        float tiltAroundZ = accreleration * normalizedMousePosX+transform.rotation.x;
+        float tiltAroundX = accreleration * normalizedMousePosY+transform.rotation.y+90f;
         // Rotate the cube by converting the angles into a quaternion.
         Quaternion target = Quaternion.Euler(tiltAroundZ, tiltAroundX, 0f);
 
