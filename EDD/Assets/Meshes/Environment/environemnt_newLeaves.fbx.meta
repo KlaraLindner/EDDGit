@@ -3,7 +3,32 @@ guid: e598288234f00514784b582de9c71d95
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Earth
+    second: {fileID: 2100000, guid: e32842bf94c827f40b48e55b2611a85d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SmallTree
+    second: {fileID: 2100000, guid: 9840afaa0e921924c8bf4161fd7dc13d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trunk
+    second: {fileID: 7138984797464257699, guid: 255521c0f5507014db71bd0b32595bc9, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trunk.001
+    second: {fileID: 2100000, guid: 00cc69f3ded475b45bf0df288c60d7e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grass_medium_01
+    second: {fileID: 2100000, guid: 06ab857999ef4cf40beaf73f98aab31e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -63,7 +88,7 @@ ModelImporter:
     secondaryUVMinLightmapResolution: 40
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
