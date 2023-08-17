@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class EnvironmentInteractable : MonoBehaviour
 {
- 
+
     void Start()
     {
-        gameObject.layer = 3;
+
     }
- 
+
 }
