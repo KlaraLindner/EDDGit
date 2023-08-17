@@ -11,8 +11,8 @@ Shader "InsideVisible"
 
     SubShader 
     {
-        Tags {"Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Transparent"}
-        ZWrite Off
+        Tags {"Queue"="Transparent" "RenderType"="Transparent"}
+        ZWrite On
         Blend SrcAlpha OneMinusSrcAlpha
         Cull Off
         LOD 100
