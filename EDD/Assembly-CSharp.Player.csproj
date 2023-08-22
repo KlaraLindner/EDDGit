@@ -56,9 +56,11 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\CameraMovement.cs" />
     <Compile Include="Assets\Script\MouseInteraktion.cs" />
     <Compile Include="Assets\Script\EnvironmentInteractable.cs" />
+    <Compile Include="Assets\Script\CameraMovement.cs" />
+    <Compile Include="Assets\Script\FuchsBehaviour.cs" />
+    <Compile Include="Assets\Script\RandomAnimalMovement.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Script\TreeBig.shader" />
@@ -612,6 +614,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.RenderPipelines.Universal.Shaders.csproj">
+      <Project>{530C3A8F-989C-DF00-84FF-C44A497035D3}</Project>
+      <Name>Unity.RenderPipelines.Universal.Shaders</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.RenderPipelines.Universal.Runtime.csproj">
+      <Project>{8D3C04B0-4363-A479-1BE4-DCB609D338A0}</Project>
+      <Name>Unity.RenderPipelines.Universal.Runtime</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
       <Project>{FB9DB03C-7FDE-8E7E-94FC-B4D212254121}</Project>
       <Name>Unity.Timeline</Name>
@@ -620,21 +630,41 @@
       <Project>{D9E35C41-2861-93E5-DB41-A5B70C7F17E7}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.RenderPipelines.Core.Runtime.csproj">
+      <Project>{F7969B40-0E8F-7718-8A8F-510D4DAAFBDB}</Project>
+      <Name>Unity.RenderPipelines.Core.Runtime</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
       <Project>{9D5CFF3C-0ECE-22BE-9BF4-2387FC857836}</Project>
       <Name>Unity.VisualScripting.Flow</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.RenderPipelines.Core.ShaderLibrary.csproj">
+      <Project>{A30DCFBE-5517-6F18-A7DE-0E422CA3AB71}</Project>
+      <Name>Unity.RenderPipelines.Core.ShaderLibrary</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{D88339F6-E306-1FA6-0889-C98269EAD6C4}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.State.csproj">
-      <Project>{42E528A6-8476-4D43-ADB7-CC38D24B7744}</Project>
-      <Name>Unity.VisualScripting.State</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.csproj">
       <Project>{EFD6A7FF-7D40-4845-8786-FA07AE7042F3}</Project>
       <Name>Unity.VisualScripting.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Mathematics.csproj">
+      <Project>{8F35ECE9-F96D-64E8-44D0-136AF402C810}</Project>
+      <Name>Unity.Mathematics</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.RenderPipeline.Universal.ShaderLibrary.csproj">
+      <Project>{DB7DCB7C-0451-5A45-39AE-CA345B6D50E7}</Project>
+      <Name>Unity.RenderPipeline.Universal.ShaderLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.csproj">
+      <Project>{04C8BE2B-6EFA-0091-EC28-6F35025A08BB}</Project>
+      <Name>Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.State.csproj">
+      <Project>{42E528A6-8476-4D43-ADB7-CC38D24B7744}</Project>
+      <Name>Unity.VisualScripting.State</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
