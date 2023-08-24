@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Script\TreeBig.shader" />
+     <None Include="Assets\Script\FoxTextureMorph.shader" />
      <None Include="Assets\license.txt" />
      <None Include="Assets\Script\TreeSmall.shader" />
     <Reference Include="UnityEngine">
