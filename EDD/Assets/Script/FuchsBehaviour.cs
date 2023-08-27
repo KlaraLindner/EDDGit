@@ -5,23 +5,73 @@ using UnityEngine;
 public class FuchsBehaviour : RandomAnimalMovement
 {
     [SerializeField] Animator fuchsAnimator;
+    Vector3 localDir;
+    Vector3 rayoffset;
+    float yHitPoint;
+    RaycastHit hit;
+    Vector3 startDir;
+    float currentYHit = 0f;
+    Vector2 hitAhead;
     // Start is called before the first frame update
     void Start()
     {
         if (!fuchsAnimator)
             Debug.LogError("No animator Linked, animatons wont work properly!");
+        startDir=transform.TransformDirection(0, -0.5f, 0);
     }
-    protected override void Update()
+     void LateUpdate()
     {
         base.Update();
-        Debug.Log(" "+currentDir);
-        Vector3 currentLerpDir =Vector3.Lerp(transform.forward, currentDir, Time.deltaTime);
-        Debug.Log("Angle "+Vector3.SignedAngle(currentLerpDir, transform.forward, Vector3.up));
+       
+        localDir =  startDir;
+        rayoffset = new Vector3(transform.position.x, transform.position.y+1, transform.position.z + 1f);
+        Vector2 twoAxisforward = new Vector2(transform.forward.x, transform.forward.z);
+        if (Physics.Raycast(rayoffset, localDir, out hit, 3f,1<<3))
+        {
+            Debug.Log("Hitahead!");
+            hitAhead = new Vector2(hit.point.y, hit.point.z);
+            Vector2 posXY = new Vector2(transform.position.y, transform.position.z);
+            Vector2 forwardXY = new Vector2(transform.forward.y, transform.forward.z);
+            Vector3 changeingVector = new Vector3(transform.forward.x, hit.point.y - transform.position.y, transform.forward.z);
 
-        fuchsAnimator.SetFloat("Turn", Vector3.SignedAngle(currentDir, transform.forward, Vector3.up));
-        transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z);
+            Vector2 twoAxisDir = new Vector2(currentDir.x, currentDir.z);
+            Mathf.LerpAngle(transform.localEulerAngles.x, Vector2.SignedAngle(twoAxisDir, twoAxisforward), Time.deltaTime);
+            
+            float rotX = Mathf.LerpAngle(transform.localEulerAngles.x, Vector3.SignedAngle(transform.forward, changeingVector, Vector3.right), Time.deltaTime);
+           
+            
+            transform.rotation = Quaternion.Euler(rotX, transform.eulerAngles.y, transform.eulerAngles.z);
+
+        }
+       
+        if (Physics.Raycast(transform.position, -transform.up, out hit, 2f, 1 << 3))
+        {
+            currentYHit = hit.point.y;
+           // transform.position = new Vector3(transform.position.x, hit.point.y, transform.position.z);
+            
+        }
+
+        
+        
+     //fuchsAnimator.SetFloat("Turn", Vector2.SignedAngle(twoAxisDir, twoAxisforward));
+       
+     
+      
         // fuchsAnimator.SetFloat("Turn", );
     }
     // Update is called once per frame
-
+    private void OnDrawGizmos()
+    {
+        startDir = transform.TransformDirection(0, -0.5f, 0.5f);
+       rayoffset= new Vector3(transform.position.x, transform.position.y + 1, transform.position.z + 1f);
+        Gizmos.DrawRay(transform.position, transform.forward);
+        Gizmos.color= Color.black;
+        if (Physics.Raycast(rayoffset, startDir, out hit, 3f, 1 << 3))
+        { Vector3 changeingVector = new Vector3(transform.forward.x,   hit.point.y- transform.position.y, transform.forward.z);
+          
+            Gizmos.DrawRay(transform.position, changeingVector);
+            
+           
+        }
+    }
 }
