@@ -19,7 +19,7 @@ public class FuchsBehaviour : RandomAnimalMovement
             Debug.LogError("No animator Linked, animatons wont work properly!");
         startDir=transform.TransformDirection(0, -0.5f, 0);
     }
-    protected override void Update()
+     void LateUpdate()
     {
         base.Update();
        
@@ -33,9 +33,12 @@ public class FuchsBehaviour : RandomAnimalMovement
             Vector2 posXY = new Vector2(transform.position.y, transform.position.z);
             Vector2 forwardXY = new Vector2(transform.forward.y, transform.forward.z);
             Vector3 changeingVector = new Vector3(transform.forward.x, hit.point.y - transform.position.y, transform.forward.z);
+
+            Vector2 twoAxisDir = new Vector2(currentDir.x, currentDir.z);
+            Mathf.LerpAngle(transform.localEulerAngles.x, Vector2.SignedAngle(twoAxisDir, twoAxisforward), Time.deltaTime);
+            
             float rotX = Mathf.LerpAngle(transform.localEulerAngles.x, Vector3.SignedAngle(transform.forward, changeingVector, Vector3.right), Time.deltaTime);
            
-                Debug.Log("Rot pos x " + rotX);
             
             transform.rotation = Quaternion.Euler(rotX, transform.eulerAngles.y, transform.eulerAngles.z);
 
@@ -48,9 +51,9 @@ public class FuchsBehaviour : RandomAnimalMovement
             
         }
 
-        Vector2 twoAxisDir = new Vector2(currentDir.x, currentDir.z);
         
-     fuchsAnimator.SetFloat("Turn", Vector2.SignedAngle(twoAxisDir, twoAxisforward));
+        
+     //fuchsAnimator.SetFloat("Turn", Vector2.SignedAngle(twoAxisDir, twoAxisforward));
        
      
       
