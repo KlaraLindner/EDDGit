@@ -15,11 +15,11 @@ C:/Users/Galiia/repo/EDDGit/EDD
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63746
+49362
 Successfully changed project path to: C:/Users/Galiia/repo/EDDGit/EDD
 C:/Users/Galiia/repo/EDDGit/EDD
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 114.69 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 487.35 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.3f1 (4bef613afd59)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.1.3f1/Editor/Data/Resources/UnitySubsystems
@@ -36,90 +36,168 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2021.1.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2021.1.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity 2021.1.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56768
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56660
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2021.1.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002174 seconds.
+Registered in 0.003704 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 117.06 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 126.63 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.335 seconds
+- Completed reload, in  2.587 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003797 seconds.
+Registered in 0.008595 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 115.83 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 121.93 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.293 seconds
+- Completed reload, in  1.342 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.88 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3995 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 161.2 MB.
-System memory in use after: 161.4 MB.
+Unloading 4008 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.5 MB.
+System memory in use after: 163.7 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 4454.
-Total: 2.748200 ms (FindLiveObjects: 0.365300 ms CreateObjectMapping: 0.281500 ms MarkObjects: 2.014500 ms  DeleteObjects: 0.086000 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 4467.
+Total: 4.444800 ms (FindLiveObjects: 0.437600 ms CreateObjectMapping: 0.269200 ms MarkObjects: 3.455800 ms  DeleteObjects: 0.281000 ms)
 
 ========================================================================
 Received Import Request.
+  path: Assets/Scenes/Klara_Scene/Global Volume Profile.asset
+  artifactKey: Guid(378a75011f00c10428ddd2ab7fafd01f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Klara_Scene/Global Volume Profile.asset using Guid(378a75011f00c10428ddd2ab7fafd01f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4f8137043748ea330a8a340522ba166') in 0.168181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
   path: Assets/Meshes/Environment/Materials/Grass.mat
   artifactKey: Guid(06ab857999ef4cf40beaf73f98aab31e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/Environment/Materials/Grass.mat using Guid(06ab857999ef4cf40beaf73f98aab31e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f21989ba1ba78e6303ac40ed060ca518') in 0.306531 seconds 
+Start importing Assets/Meshes/Environment/Materials/Grass.mat using Guid(06ab857999ef4cf40beaf73f98aab31e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b3298baeda9c6488198081e71d3f553') in 0.277116 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000394 seconds.
+  Time since last request: 0.000332 seconds.
   path: Assets/Meshes/Environment/Materials/TreeBig.mat
   artifactKey: Guid(13e47d0a1bc3cb84fba18926c1f50404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/Environment/Materials/TreeBig.mat using Guid(13e47d0a1bc3cb84fba18926c1f50404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '199bc7d9b81010031e6e3b95614dacfc') in 0.069175 seconds 
+Start importing Assets/Meshes/Environment/Materials/TreeBig.mat using Guid(13e47d0a1bc3cb84fba18926c1f50404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecaadf4deadd5d00c28af57c6f2552ae') in 0.047341 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 76.203302 seconds.
-  path: Assets/Meshes/EnvironmentAnimals/Snail/239664-1604x988-snail.jpg
-  artifactKey: Guid(47ae4e45b0931384aa0e53782daed497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/EnvironmentAnimals/Snail/239664-1604x988-snail.jpg using Guid(47ae4e45b0931384aa0e53782daed497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e368e26bd6c3d858431cffa505e25a41') in 0.113768 seconds 
+  Time since last request: 3.372550 seconds.
+  path: Assets/Meshes/Canvas
+  artifactKey: Guid(0dd61c1417c6e8840934d95b06eb2905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/Canvas using Guid(0dd61c1417c6e8840934d95b06eb2905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd407610c46b325f0feb7a0ba6323ed6a') in 0.018634 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1552.969300 seconds.
-  path: Assets/Shader/test.shadergraph
-  artifactKey: Guid(d6d662b6f4e6808499762d4d0cbeb4d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader/test.shadergraph using Guid(d6d662b6f4e6808499762d4d0cbeb4d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ac427e959f5d93eb1853918306a5fc1') in 0.039155 seconds 
+  Time since last request: 118.619515 seconds.
+  path: Assets/Meshes/Canvas/branch.png
+  artifactKey: Guid(cf0496731583ef142a88a700a9c5fd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/Canvas/branch.png using Guid(cf0496731583ef142a88a700a9c5fd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a718f64b216c66bb361017a0e4eabf98') in 0.121296 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 93.421607 seconds.
-  path: Assets/Shader/test.shadergraph
-  artifactKey: Guid(d6d662b6f4e6808499762d4d0cbeb4d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader/test.shadergraph using Guid(d6d662b6f4e6808499762d4d0cbeb4d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ead13dcc36e386190a705faa163a3bf7') in 0.004757 seconds 
+  Time since last request: 0.000450 seconds.
+  path: Assets/Meshes/Canvas/pine.png
+  artifactKey: Guid(5bdfce7e0d9b7974bbde1265ead6fd17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/Canvas/pine.png using Guid(5bdfce7e0d9b7974bbde1265ead6fd17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '596e1a266d8d5d97317eed4a281fb90c') in 0.040181 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.371632 seconds.
-  path: Assets/Shader/test.mat
-  artifactKey: Guid(0ff78ef9d0f3af84bbd379470dbee880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader/test.mat using Guid(0ff78ef9d0f3af84bbd379470dbee880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6296ef2c047fb0f6ed3c7fcbdaa7055b') in 0.052124 seconds 
+  Time since last request: 0.001119 seconds.
+  path: Assets/Meshes/Canvas/pngtree-fresh-spruce-branch-png-image_6181109.png
+  artifactKey: Guid(cb328166fd8f4344f83bb6f4b6c0dab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/Canvas/pngtree-fresh-spruce-branch-png-image_6181109.png using Guid(cb328166fd8f4344f83bb6f4b6c0dab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a71d2e65cc71690f2f0b4b0ebca76ae4') in 0.043893 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 25.568902 seconds.
-  path: Assets/Meshes/EnvironmentAnimals/BlackBird/BlackBird.fbx
-  artifactKey: Guid(c1bed13a4f5712545b6fc8e3575f0419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/EnvironmentAnimals/BlackBird/BlackBird.fbx using Guid(c1bed13a4f5712545b6fc8e3575f0419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '283e81221b40a065e66b7a60477dcc33') in 0.181767 seconds 
+  Time since last request: 0.000337 seconds.
+  path: Assets/Meshes/Canvas/pine-cone.png
+  artifactKey: Guid(40716c3dbdccbf84cac3d9ef6d85b25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/Canvas/pine-cone.png using Guid(40716c3dbdccbf84cac3d9ef6d85b25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a16b9b1b28406ce7a70e02759772825') in 0.032293 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000393 seconds.
-  path: Assets/Meshes/EnvironmentAnimals/BlackBird/BlackBird 1.blend
-  artifactKey: Guid(267d42af4fe7f4541ba7acf5773e1cf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/EnvironmentAnimals/BlackBird/BlackBird 1.blend using Guid(267d42af4fe7f4541ba7acf5773e1cf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7faa02b631bfc8a8ff80d9c372f5e49b') in 0.083641 seconds 
+  Time since last request: 0.000514 seconds.
+  path: Assets/Meshes/Canvas/spruce.png
+  artifactKey: Guid(2f9dc65be64b7e24b8cac8944b7f5a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/Canvas/spruce.png using Guid(2f9dc65be64b7e24b8cac8944b7f5a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd594898bf85de07744a59a0365df8eab') in 0.030242 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1443.505208 seconds.
-  path: Assets/Shader/Tree_leaves.mat
-  artifactKey: Guid(5f9977d5b0366fd4eba26739d14287ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader/Tree_leaves.mat using Guid(5f9977d5b0366fd4eba26739d14287ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3255c45df591a7e1f8fe07812dfe9e8d') in 0.053121 seconds 
+  Time since last request: 0.000326 seconds.
+  path: Assets/Meshes/Canvas/pine_branch.png
+  artifactKey: Guid(17ccacacae18b264cae76d78455c3024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/Canvas/pine_branch.png using Guid(17ccacacae18b264cae76d78455c3024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35e6600856bd048ec389784b294b1821') in 0.028727 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.322450 seconds.
+  path: Assets/Meshes/Canvas/pine_branch.png
+  artifactKey: Guid(17ccacacae18b264cae76d78455c3024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/Canvas/pine_branch.png using Guid(17ccacacae18b264cae76d78455c3024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55c9dfd404c3dcfcc60ccfdb36e4301b') in 0.049146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.865121 seconds.
+  path: Assets/Meshes/Canvas/pngtree-fresh-spruce-branch-png-image_6181109.png
+  artifactKey: Guid(cb328166fd8f4344f83bb6f4b6c0dab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/Canvas/pngtree-fresh-spruce-branch-png-image_6181109.png using Guid(cb328166fd8f4344f83bb6f4b6c0dab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b30b427d81d7364d32252b2ef3a2e34e') in 0.033340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.523063 seconds.
+  path: Assets/Meshes/Canvas/spruce.png
+  artifactKey: Guid(2f9dc65be64b7e24b8cac8944b7f5a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/Canvas/spruce.png using Guid(2f9dc65be64b7e24b8cac8944b7f5a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e7ad35c7a3c5ed748efed1f4d4901af') in 0.032936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.147799 seconds.
+  path: Assets/Meshes/Canvas/pine.png
+  artifactKey: Guid(5bdfce7e0d9b7974bbde1265ead6fd17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/Canvas/pine.png using Guid(5bdfce7e0d9b7974bbde1265ead6fd17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cc736f57ba3005807152bacd62662c9') in 0.031264 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.767220 seconds.
+  path: Assets/Meshes/Canvas/pine-cone.png
+  artifactKey: Guid(40716c3dbdccbf84cac3d9ef6d85b25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/Canvas/pine-cone.png using Guid(40716c3dbdccbf84cac3d9ef6d85b25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b868f3f924a3cf5bba51bcf277e01e9') in 0.030025 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.372376 seconds.
+  path: Assets/Meshes/Canvas/branch.png
+  artifactKey: Guid(cf0496731583ef142a88a700a9c5fd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/Canvas/branch.png using Guid(cf0496731583ef142a88a700a9c5fd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bdf5a31e9134d4cd2943c6b3b399645') in 0.031527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.348728 seconds.
+  path: Assets/Meshes/Canvas/branch.png
+  artifactKey: Guid(cf0496731583ef142a88a700a9c5fd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/Canvas/branch.png using Guid(cf0496731583ef142a88a700a9c5fd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c4aedd40405dc02fb9b8b9f3f1a3d6d') in 0.016210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.531985 seconds.
+  path: Assets/Meshes/Canvas/pine-cone.png
+  artifactKey: Guid(40716c3dbdccbf84cac3d9ef6d85b25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/Canvas/pine-cone.png using Guid(40716c3dbdccbf84cac3d9ef6d85b25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '281f9e5ba19054ed8d4968d06b6d446b') in 0.024318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.186145 seconds.
+  path: Assets/Meshes/Canvas/pine.png
+  artifactKey: Guid(5bdfce7e0d9b7974bbde1265ead6fd17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/Canvas/pine.png using Guid(5bdfce7e0d9b7974bbde1265ead6fd17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f626784f746759af33046da52d4edda0') in 0.015121 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.327940 seconds.
+  path: Assets/Meshes/Canvas/spruce.png
+  artifactKey: Guid(2f9dc65be64b7e24b8cac8944b7f5a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/Canvas/spruce.png using Guid(2f9dc65be64b7e24b8cac8944b7f5a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c2b0f4f2db11346aecc49e298c2d79b') in 0.015533 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.548377 seconds.
+  path: Assets/Meshes/Canvas/pngtree-fresh-spruce-branch-png-image_6181109.png
+  artifactKey: Guid(cb328166fd8f4344f83bb6f4b6c0dab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/Canvas/pngtree-fresh-spruce-branch-png-image_6181109.png using Guid(cb328166fd8f4344f83bb6f4b6c0dab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d8144c37c565f2b775410a406695ca2') in 0.021142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.684267 seconds.
+  path: Assets/Meshes/Canvas/pine_branch.png
+  artifactKey: Guid(17ccacacae18b264cae76d78455c3024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/Canvas/pine_branch.png using Guid(17ccacacae18b264cae76d78455c3024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36b26f7523f25100ca4d44ec518c9279') in 0.024863 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
