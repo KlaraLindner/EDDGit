@@ -35,7 +35,7 @@ public class RandomAnimalMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("On Trigger Enter called "+ pathPoints[currentIndexPathPoint].transform.Equals(other.transform));
+
         if (!pathPoints[currentIndexPathPoint].transform.Equals(other.transform))
                 return;
             currentIndexPathPoint++;

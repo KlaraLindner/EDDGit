@@ -61,6 +61,7 @@
     <Compile Include="Assets\Script\CameraMovement.cs" />
     <Compile Include="Assets\Script\FuchsBehaviour.cs" />
     <Compile Include="Assets\Script\RandomAnimalMovement.cs" />
+    <Compile Include="Assets\Script\UIElementsToggle.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
