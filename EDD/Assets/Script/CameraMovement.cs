@@ -12,6 +12,8 @@ public class CameraMovement : MonoBehaviour
     float screenspaceY;
     float normalizedMousePosX;
     float normalizedMousePosY;
+    [SerializeField] GameObject canvas;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +28,7 @@ public class CameraMovement : MonoBehaviour
     //Screenspce .x
     void RotateCam()
     {
-
+        
         if (ev.IsPointerOverGameObject())
             return;
 
